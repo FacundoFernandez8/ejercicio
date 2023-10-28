@@ -327,29 +327,28 @@ footer{
 
 .catalogo-fotos{
     display: grid;
-    grid-template-columns: repeat(4,1fr minmax(500px, auto));/*4 columnas y 1 fracion*/
-    gap: 1rem;
-    /*margin-top: 2rem;*/
+    grid-template-columns: repeat(4, 1fr);
+    margin: 15px;
     background-color: #081b29;
-} 
+}
 
 
 
 .catalogo-fotos .caja{
     margin: 10px;
-    padding: 20px;
+    padding: 30px;
     border-radius: 1rem;
     background-color: #176985;
 }
 
 .catalogo-fotos .caja .caja-bicis{
     width: 100%;
-    height: 380px;
+    height: 300px;
 }
 
 .catalogo-fotos .caja .caja-bicis img{
     width: 100%;
-    height: 100%;
+    height: 300px;
     border-radius: 1rem;
     object-fit: cover;
     object-position: center;
@@ -429,43 +428,63 @@ footer{
 
 /*NOSOTROS*/
 
+.nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
 .mensaje{
     text-align: center;
-    background-color: #E3C143;
+    background-color: #176985;
+    color: #ffffff;
     margin: 5%;
-    padding: 50px;
+    padding: 100px;
     font-size: 1.5rem;
+    border: 20px white double;
     border-radius: 8px;
 }
 
 .descripcion{
     text-align: center;
-    background-color: #E3C143;
+    background-color: #176985;
+    color: #ffffff;
     margin: 5%;
     padding: 100px;
     font-size: 1.5rem;
+    border: 20px white double;
     border-radius: 8px;
 }
 
 .comunidad{
     text-align: center;
-    background-color: #E3C143;
+    background-color: #176985;
+    color: #ffffff;
     margin: 5%;
-    padding: 50px;
+    padding: 100px;
     font-size: 1.5rem;
+    border: 20px white double;
     border-radius: 8px;
 }
 
 .cierre{
     text-align: center;
-    background-color: #E3C143;
+    background-color: #176985;
+    color: #ffffff;
     margin: 5%;
-    padding: 50px;
+    padding: 100px;
     font-size: 1.5rem;
+    border: 20px white double;
     border-radius: 8px;
 }
 
 @media (max-width: 800px) {  
+
+    .nosotros{
+        display: inline-block;
+    }
+
+
     .mensaje{
         text-align: center;
         background-color: #176985;
