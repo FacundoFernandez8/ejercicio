@@ -327,7 +327,7 @@ footer{
 
 .catalogo-fotos{
     display: grid;
-    grid-template-columns: repeat(3,1fr minmax(500px, auto));/*4 columnas y 1 fracion*/
+    grid-template-columns: repeat(4,1fr minmax(500px, auto));/*4 columnas y 1 fracion*/
     gap: 1rem;
     /*margin-top: 2rem;*/
     background-color: #081b29;
@@ -444,6 +444,7 @@ footer{
     margin: 5%;
     padding: 100px;
     font-size: 1.5rem;
+    border-radius: 8px;
 }
 
 .comunidad{
@@ -452,6 +453,7 @@ footer{
     margin: 5%;
     padding: 50px;
     font-size: 1.5rem;
+    border-radius: 8px;
 }
 
 .cierre{
@@ -460,8 +462,51 @@ footer{
     margin: 5%;
     padding: 50px;
     font-size: 1.5rem;
+    border-radius: 8px;
 }
 
+@media (max-width: 800px) {  
+    .mensaje{
+        text-align: center;
+        background-color: #176985;
+        color: #ffffff;
+        margin: 5%;
+        padding: 50px;
+        font-size: 1.5rem;
+        border-radius: 8px;
+    }
+    
+    .descripcion{
+        text-align: center;
+        background-color: #176985;
+        color: #ffffff;
+        margin: 5%;
+        padding: 100px;
+        font-size: 1.5rem;
+        border-radius: 8px;
+    }
+    
+    .comunidad{
+        text-align: center;
+        background-color: #176985;
+        color: #ffffff;
+        margin: 5%;
+        padding: 50px;
+        font-size: 1.5rem;
+        border-radius: 8px;
+    }
+    
+    .cierre{
+        text-align: center;
+        background-color: #176985;
+        color: #ffffff;
+        margin: 5%;
+        padding: 50px;
+        font-size: 1.5rem;
+        border-radius: 8px;
+    }
+
+}
 /*Aqui comienza Contacto*/
 
 .login-inicio{
