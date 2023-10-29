@@ -528,15 +528,6 @@ footer{
     }
 
 }
+
+
 /*Aqui comienza Contacto*/
-
-.login{
-    display: flex;
-    border:solid thin red;
-    max-width: 900px;
-    height: 500px;
-    border-radius: 20px;
-}
-
-
-
