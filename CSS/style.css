@@ -143,14 +143,16 @@ body {
     border: 5px #176985 solid;
     background-color: #176985;
     border-radius: 8px;
+    border: 10px white double;
+    border-radius: 8px;
 }
 
 .mensaje-bienvenida h3{
     color: #ffffff;
 }
-/*PATROCINADORES*/
+/*PATROCINADORES
 
-/*titulo patrocinadores*/
+titulo patrocinadores
 .patrocinadores-titulo{
     padding: 10px;
     margin: 0;
@@ -165,7 +167,7 @@ body {
     position: relative;
     font-size: 5rem;
 }
-/*PATROCINADORES*/
+PATROCINADORES*/
 
 
 /*NOVEDADES BICIS*/
@@ -528,28 +530,13 @@ footer{
 }
 /*Aqui comienza Contacto*/
 
-.login-inicio{
+.login{
     display: flex;
-    background-color: #176985;
-    border: 8px red solid;
-    
-}
-
-.login-inicio .login{ 
-    padding: 20px;
-    margin: 0; 
-    border-radius: 5%;
-    width: 40%;
-}
-
-.login-inicio .login h1{
-    text-align:center;
-    font-size: 4rem;
-    font-weight: 500;  
+    border:solid thin red;
+    max-width: 900px;
+    height: 500px;
+    border-radius: 20px;
 }
 
 
-.login-inicio .registro h3{
-    font-size: 3rem;
-    font-size: 500;
-}
+
