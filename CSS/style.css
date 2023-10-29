@@ -526,30 +526,111 @@ footer{
     }
 
 }
+
+
 /*Aqui comienza Contacto*/
 
-.login-inicio{
+.login{
     display: flex;
     background-color: #176985;
-    border: 8px red solid;
+    border: 8px rgb(255, 255, 255) solid;
     
 }
 
-.login-inicio .login{ 
-    padding: 20px;
+.informacion{ 
     margin: 0; 
     border-radius: 5%;
     width: 40%;
 }
 
-.login-inicio .login h1{
+.informacion-login{
+    background-color: #176985;  
+    padding: 50px;
     text-align:center;
-    font-size: 4rem;
-    font-weight: 500;  
+}
+
+.informacion-login h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #DAFFFB;  
 }
 
 
-.login-inicio .registro h3{
+.informacion-login p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #DAFFFB;
+}
+
+.informacion-login input{
+    border: 3px #DAFFFB solid;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #176985;
+    color: #DAFFFB;
+    font-size: 1.5rem;
+}
+
+.informacion-login input:hover{
+    background-color: #081b29;
+}
+
+.form-information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    background-color: #081b29;
+    padding: 30px;
+}
+
+.form-information-childs{
+    padding: 0 30px;
+}
+
+.form-information-childs h2{
+    color: #DAFFFB;
     font-size: 3rem;
-    font-size: 500;
+}
+
+.form-information-childs p{
+    color: #DAFFFB;
+    font-size: 1.5rem;
+}
+
+.form{
+    margin: 30px 0 0 0;
+}
+
+.form label{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color:#DAFFFB ;
+}
+
+.form label input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #DAFFFB;
+}
+
+.form .btn{
+    margin: 10px;
+    border: 3px #DAFFFB solid;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #081b29;
+    color: #DAFFFB;
+    font-size: 1.5rem;
+}
+
+.form .btn:hover{
+    background-color: #176985;
 }
