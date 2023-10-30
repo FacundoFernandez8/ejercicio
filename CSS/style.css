@@ -231,6 +231,73 @@ footer{
     color:crimson;
 }
 
+@media (max-width: 1200px) {  
+    header{
+        flex-direction: column;
+        height: 120px;
+        justify-content: space-evenly;        
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #081b29; 
+    }
+
+    .inicio{
+        text-align: center;
+        color: #ffffff;
+        font-size: 2rem;
+    }
+
+    .inicio-bienvenida .presentacion h1 {
+        font-size: 4rem;
+        color: #ffffff;
+    }
+
+    .mensaje-bienvenida {
+        display: inline-block;
+        margin: 25px;
+        padding: 20px;
+        font-size: 3rem;
+        text-align: center;
+        border: 2px #176985 solid;
+        border-radius: 10px;
+        background-color: #176985;
+    }
+
+    .bicis-fotos{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(300px, auto));
+        gap: 0.5rem;
+        margin-top: 2rem;  
+    } 
+    
+    .bicis-fotos .producto{
+        margin: 0px;
+        padding: 20px;
+    }
+    
+    .bicis-fotos .producto img{
+        width: 95%;
+        height: 350px;
+        object-fit: cover;
+        object-position: center;
+        border: 2px #176985 solid;
+        border-radius: 5px;
+    }
+    
+    
+    .bicis-fotos .producto h3{
+        margin: 19px;
+        font-weight: 50;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+    }
+
+}
+
 @media (max-width: 800px) {  
     header{
         flex-direction: column;
@@ -266,25 +333,6 @@ footer{
         background-color: #176985;
     }
 
-    /*.patrocinadores{
-        display:grid;
-        grid-template-columns: repeat(3, minmax(200px,auto));
-        gap: 0.5rem;
-        margin-top: 2rem;
-    }
-
-    .patrocinadores .logo-patro{
-        margin: 0px;
-        padding: 50px;
-    }
-
-    .patrocinadores .logo-patro img{
-        width: 95%;
-        height: 100px;
-        object-fit: cover;
-        object-position: center;
-    }*/
-
     .bicis-fotos{
         display: grid;
         grid-template-columns: repeat(2, minmax(300px, auto));
@@ -316,6 +364,9 @@ footer{
     }
 
 }
+
+
+
 /*CATALOGO*/
 
 .catalogo{
@@ -479,6 +530,56 @@ footer{
     border: 20px white double;
     border-radius: 8px;
 }
+
+@media (max-width: 1200px) {  
+
+    .nosotros{
+        display: inline-block;
+    }
+
+
+    .mensaje{
+        text-align: center;
+        background-color: #176985;
+        color: #ffffff;
+        margin: 5%;
+        padding: 50px;
+        font-size: 1.5rem;
+        border-radius: 8px;
+    }
+    
+    .descripcion{
+        text-align: center;
+        background-color: #176985;
+        color: #ffffff;
+        margin: 5%;
+        padding: 100px;
+        font-size: 1.5rem;
+        border-radius: 8px;
+    }
+    
+    .comunidad{
+        text-align: center;
+        background-color: #176985;
+        color: #ffffff;
+        margin: 5%;
+        padding: 50px;
+        font-size: 1.5rem;
+        border-radius: 8px;
+    }
+    
+    .cierre{
+        text-align: center;
+        background-color: #176985;
+        color: #ffffff;
+        margin: 5%;
+        padding: 50px;
+        font-size: 1.5rem;
+        border-radius: 8px;
+    }
+
+}
+
 
 @media (max-width: 800px) {  
 
