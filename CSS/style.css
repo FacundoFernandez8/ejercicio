@@ -44,6 +44,13 @@ main{
     color: #081b29;
 }
 
+                /*Cuerpo de Incio*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; 
+}
+
 header{
     display: flex;
     justify-content: center;
@@ -89,13 +96,6 @@ button{
 
 button:hover{
     background-color: #989b03;
-}
-
-                /*Cuerpo de Incio*/
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0; 
 }
 
               /*Inicio*/
@@ -231,7 +231,7 @@ footer{
     color:crimson;
 }
 
-@media (max-width: 1200px) {  
+@media (max-width: 1250px) {  
     header{
         flex-direction: column;
         height: 120px;
