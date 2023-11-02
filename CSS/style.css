@@ -8,7 +8,6 @@
 li,a {
     font-weight: 500;
     font-size: 20px;
-    color: rgb(255, 255, 255);
     text-decoration: none;
 } 
 
@@ -32,10 +31,7 @@ main{
     display: inline-block;
     position: relative;
     font-size: 5rem;
-    /*border: 3px #ffffff solid;
-    border-radius: 2px;*/
-    padding: 15px;
-    
+    padding: 15px;   
 }
 
 .titulo{
@@ -57,6 +53,11 @@ header{
     align-items:center;
     padding: 30px 10%;
     background-color: #081b29;
+}
+
+.navbar-brand img{
+    width: 50px;
+    height: 50px;
 }
 
 .logo{
@@ -94,6 +95,55 @@ button{
 
 button:hover{
     background-color: #176985;
+}
+
+
+footer{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 30px 0;
+}
+
+
+.footer{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-contenido{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.footer-info{
+    flex: 0 0 33%;
+    max-width: 33%;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.iconos-redes li{
+    display: inline-block;
+}
+
+@media (max-width: 991px) {
+    .footer-info{
+        flex:0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767px){
+    .footer-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
               /*Inicio*/
@@ -217,17 +267,7 @@ PATROCINADORES*/
     color: white;
 }
 
-
-/*FOOTER*/
-
-footer{
-    background-color: #DAFFFB;
-}
-
-.footer-titulos{
-    text-align: center;
-    color:crimson;
-}
+/*Responsive Inicio*/
 
 @media (max-width: 1250px) {  
     header{
@@ -379,7 +419,6 @@ footer{
 .catalogo-fotos{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 15px;
     background-color: #081b29;
 }
 
@@ -440,42 +479,80 @@ footer{
 
 /*COMUNIDAD*/
 
-.tabla-2{
+.puntuacion{
+    display: flex;
+}
+
+.tabla{
     display: inline-block;
     text-align:stretch;
     background-color: #176985;
     padding: 10px;
-    margin: 10px ; 
+    margin: 20px ; 
     align-content: stretch;
     border-radius: 5%;
+    border: #DAFFFB 5px solid;
 }
 
-.tabla-puntos-2 {
-    border-collapse: collapse; margin: 25px 0; 
-    font-size: 1em; 
-    font-family: sans-serif; 
-    min-width: 450px; 
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); }
-    
+.tabla h2{
+    text-align: center;
+    color: #DAFFFB;
+}
 
-.tabla-puntos-2 tr { 
+.tabla-puntos {
+    border-collapse: collapse; margin: 25px 0; 
+    font-size: 1em;  
+    min-width: 450px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
+    text-align: center;
+}
+
+.tabla-puntos tr { 
     background-color: #961b8b; 
     color: #f0f0f0; 
     text-align: middle;
-
 }
 
 .tabla-puntos th, .tabla-puntos td{
     padding: 12px 15px;
 }
 
-.videos{   
+.tabla-funcion{
+    border: 5px rgb(255, 255, 255) solid;
+    margin: 0 40px;
+    padding: 30px;
+    text-align: center;
+    color: #DAFFFB;
+    background-color: #176985;
+    border-radius: 20px;
+}
+
+.tabla-funcion h3{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.tabla-funcion p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.destacado{
+    text-align: center;
+    color: #DAFFFB;
+    font-size: 3rem;
+    margin-top: 80px;
+}
+
+.destacado-mes{   
     display: grid;
+    gap: 3rem;
     grid-template-columns: repeat(2, 1fr);;
     margin: 20px;
     padding: 10px;
     align-items: center;
 }
+
 
 /*NOSOTROS*/
 
@@ -630,13 +707,21 @@ footer{
 
 
 /*Aqui comienza Contacto*/
+
+
+.box-login{
+    display: block;
+}
+
 .login{
     display: flex;
+    border: red 10px solid;
     max-width: 900px;
     height: 500px;
     border-radius: 20px;
     background-color: #176985;
-    border: 8px rgb(255, 255, 255) solid;
+    /*border: 8px rgb(255, 255, 255) solid;*/
+    
 }
 
 .informacion{ 
