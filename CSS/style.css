@@ -500,7 +500,8 @@ PATROCINADORES*/
 }
 
 .tabla-puntos {
-    border-collapse: collapse; margin: 25px 0; 
+    border-collapse: collapse; 
+    margin: 25px 0; 
     font-size: 1em;  
     min-width: 450px; 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
@@ -708,9 +709,10 @@ PATROCINADORES*/
 
 /*Aqui comienza Contacto*/
 
-
 .box-login{
-    display: block;
+    display: flex;
+    justify-content: center;
+       
 }
 
 .login{
@@ -721,7 +723,6 @@ PATROCINADORES*/
     border-radius: 20px;
     background-color: #176985;
     /*border: 8px rgb(255, 255, 255) solid;*/
-    
 }
 
 .informacion{ 
