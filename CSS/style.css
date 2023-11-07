@@ -27,7 +27,7 @@ main{
     background: #081b29;
 }
 
-.inicio h2{
+.inicio h1{
     display: inline-block;
     position: relative;
     font-size: 5rem;
@@ -68,6 +68,10 @@ header{
 .navbar{
     list-style: none;
     font-weight: 500;  
+}
+
+.navbar-brand{
+    justify-content: center;
 }
 
 .navbar li{
@@ -162,7 +166,7 @@ ul{
     padding: 180px;
 }
 
-.inicio-bienvenida .presentacion h1{
+.inicio-bienvenida .presentacion h2{
     font-size: 5rem;
     color: #ffffff;
 }
@@ -198,24 +202,6 @@ ul{
 .mensaje-bienvenida h3{
     color: #ffffff;
 }
-/*PATROCINADORES
-
-titulo patrocinadores
-.patrocinadores-titulo{
-    padding: 10px;
-    margin: 0;
-    text-align: center; 
-    color: rgb(255, 255, 255);
-    background: #081b29;
-
-}
-
-.patrocinadores-titulo h2{
-    display: inline-block;
-    position: relative;
-    font-size: 5rem;
-}
-PATROCINADORES*/
 
 
 /*NOVEDADES BICIS*/
@@ -288,7 +274,7 @@ PATROCINADORES*/
         font-size: 2rem;
     }
 
-    .inicio-bienvenida .presentacion h1 {
+    .inicio-bienvenida .presentacion h2 {
         font-size: 4rem;
         color: #ffffff;
     }
@@ -355,7 +341,7 @@ PATROCINADORES*/
         font-size: 2rem;
     }
 
-    .inicio-bienvenida .presentacion h1 {
+    .inicio-bienvenida .presentacion h2 {
         font-size: 3rem;
         color: #ffffff;
     }
@@ -403,7 +389,72 @@ PATROCINADORES*/
 
 }
 
+@media(max-width:686px){
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #081b29; 
+    }
 
+    .inicio{
+        text-align: center;
+        color: #ffffff;
+        font-size: 2rem;
+    }
+
+    .inicio-bienvenida .presentacion{
+        display: inline-block;
+        position: relative;
+        margin: 0;
+        padding: 50px;
+    }
+
+    .inicio-bienvenida .presentacion h2 {
+        font-size: 3rem;
+        color: #ffffff;
+    }
+
+    .mensaje-bienvenida {
+        display: inline-block;
+        margin: 10px;
+        padding: 20px;
+        font-size: 3rem;
+        text-align: center;
+        border: 2px #176985 solid;
+        border-radius: 10px;
+        background-color: #176985;
+    }
+
+    .bicis-fotos{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, auto));
+        gap: 0.5rem;
+        margin-top: 2rem;  
+    } 
+    
+    .bicis-fotos .producto{
+        margin: 0px;
+        padding: 20px;
+    }
+    
+    .bicis-fotos .producto img{
+        width: 95%;
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+        border: 2px #176985 solid;
+        border-radius: 5px;
+    }
+    
+    
+    .bicis-fotos .producto h3{
+        margin: 19px;
+        font-weight: 50;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+    }
+}
 
 /*CATALOGO*/
 
@@ -445,7 +496,7 @@ PATROCINADORES*/
 }
 
 
-.catalogo-fotos .caja h3{
+.catalogo-fotos .caja h2{
     margin: 19px;
     font-weight: 50;
     font-size: 30px;
@@ -454,14 +505,14 @@ PATROCINADORES*/
 }
 
 
-.catalogo-fotos .caja h2{
+.catalogo-fotos .caja h3{
     font-size: 1rem;
     font-weight: 600;   
     margin: 1px;
     text-align: center;
 }
 
-.catalogo-fotos .caja h2 span{
+.catalogo-fotos .caja h3 span{
     font-size: 2rem;
     font-weight: 600;
     color: #000000;   
@@ -471,7 +522,7 @@ PATROCINADORES*/
     margin: 5px;
 }
 
-.catalogo-fotos .caja h2 span:hover{
+.catalogo-fotos .caja h3 span:hover{
     background-color: #000000;
     color:#ffffff;
 }
@@ -717,12 +768,12 @@ PATROCINADORES*/
 
 .login{
     display: flex;
-    border: red 10px solid;
     max-width: 900px;
     height: 500px;
     border-radius: 20px;
     background-color: #176985;
-    /*border: 8px rgb(255, 255, 255) solid;*/
+    border: 8px rgb(255, 255, 255) solid;
+    margin: 20px;
 }
 
 .informacion{ 
