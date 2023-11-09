@@ -272,6 +272,17 @@ ul{
     color: white;
 }
 
+.btn-catalogo{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.navbar-brand{
+    display: flex;
+    justify-content: center;
+}
+
 /*Responsive Inicio*/
 
 @media (max-width: 1250px) {  
@@ -684,6 +695,13 @@ ul{
 
 .patro h2{
     font-size: 2rem;
+}
+
+.patro-logos{
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    object-position: center;
 }
 
 .patrocinadores{
