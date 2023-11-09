@@ -658,6 +658,24 @@ ul{
     border-radius: 8px;
 }
 
+.patro{
+    text-align: center;
+    color: #6a7c7a;
+}
+
+.patro h2{
+    font-size: 2rem;
+}
+
+.patrocinadores{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 1250px) {  
 
     .nosotros{
@@ -872,4 +890,23 @@ ul{
 
 .form .btn:hover{
     background-color: #176985;
+}
+
+.local{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);;
+    margin: 40px;
+    padding: 10px;
+    align-items: center;
+}
+
+.producto-titulo {
+    text-align: center;
+    color: #DAFFFB;
+}
+
+.producto-titulo h3{
+    font-size: 3rem;
+    font-weight: 500;
 }
