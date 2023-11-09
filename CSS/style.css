@@ -65,9 +65,21 @@ header{
     position: initial;
 }
 
+.navbar-brand{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.navbar-brand img{
+    width: 80px;
+    height: 80px;
+}
+
 .navbar{
     list-style: none;
     font-weight: 500;  
+    background-color: #081b29;
 }
 
 .navbar-brand{
@@ -95,10 +107,17 @@ button{
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    background-color: #DAFFFB;
+}
+
+.navbar-toggler{
+    background-color: #DAFFFB;
+    border:#176985 solid 1px;
 }
 
 button:hover{
     background-color: #176985;
+    border: #DAFFFB 1px solid;
 }
 
 
