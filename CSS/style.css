@@ -215,9 +215,9 @@ ul{
     padding: 35px;
     font-size: 5rem;
     font-weight: 600;
-    background-color: #176985;
+    background-color: #081b29;
     border-radius: 8px;
-    border: 8px white solid;
+    border: 10px #f707ff groove;
     border-radius: 8px;
 }
 
@@ -266,7 +266,7 @@ ul{
     height: 600px;
     object-fit: cover;
     object-position: center;
-    border: 5px #176985 solid;
+    border: 5px #f707ff solid;
     border-radius: 5px;
 }
 
@@ -325,9 +325,9 @@ ul{
         padding: 20px;
         font-size: 3rem;
         text-align: center;
-        border: 2px #176985 solid;
+        border: 5px #f707ff solid;
         border-radius: 10px;
-        background-color: #176985;
+        background-color: #081b29;
     }
 
     .bicis-fotos{
@@ -347,7 +347,7 @@ ul{
         height: 350px;
         object-fit: cover;
         object-position: center;
-        border: 2px #176985 solid;
+        border: 3px #f707ff solid;
         border-radius: 5px;
     }
     
@@ -496,6 +496,26 @@ ul{
     }
 }
 
+@media(max-width:420px){
+    .bienvenida h2{
+        font-size:3rem;
+    }
+
+    .mensaje-bienvenida{
+        background-color: #081b29;
+        border: #f707ff 3px groove;
+    }
+
+    .novedades h2{
+        font-size: 3rem;
+    }
+
+    .bicis-fotos .producto img{
+        height: 136px;
+        border: 2px #f707ff solid;
+    }
+}
+
 /*CATALOGO*/
 
 .catalogo{
@@ -575,6 +595,16 @@ ul{
     } 
 }
 
+@media(max-width:420px){
+    .catalogo-fotos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .inicio h1{
+        font-size:3rem;
+    }
+}
 
 /*COMUNIDAD*/
 
@@ -584,13 +614,12 @@ ul{
 
 .tabla{
     display: inline-block;
-    text-align:stretch;
-    background-color: #176985;
+    background-color: #081b29;
     padding: 10px;
     margin: 20px ; 
     align-content: stretch;
     border-radius: 5%;
-    border: #DAFFFB 5px solid;
+    border: #f707ff 5px groove;
 }
 
 .tabla h2{
@@ -608,7 +637,7 @@ ul{
 }
 
 .tabla-puntos tr { 
-    background-color: #961b8b; 
+    background-color: #176985; 
     color: #f0f0f0; 
     text-align: middle;
 }
@@ -618,12 +647,12 @@ ul{
 }
 
 .tabla-funcion{
-    border: 5px rgb(255, 255, 255) solid;
+    border: 10px #f707ff groove;
     margin: 0 40px;
     padding: 30px;
     text-align: center;
     color: #DAFFFB;
-    background-color: #176985;
+    background-color: #081b29;
     border-radius: 20px;
 }
 
@@ -653,22 +682,45 @@ ul{
     align-items: center;
 }
 
-@media(max-width:768){
-    .container{
-        width: 768px;
+@media(max-width:768px){
+ 
+    .puntuacion{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(200px, auto));
+        justify-content: center; 
     }
-    
+
     .tabla{
-       justify-content: center; 
+        width: 670px;
+        margin: 0; 
+    }
+
+    .tabla-funcion{
+        margin: 0;
+        width: 670px;
+    }
+
+    .tabla-puntos{
+        margin: 5px;
+    }
+
+    .titulo-destacado h2{
+        font-size: 2rem;
+        color: #DAFFFB;
     }
 
     .destacado-mes{
         display: grid;    
-        grid-template-columns: repeat(2, minmax(300px, auto));   
+        grid-template-columns: repeat(1, minmax(300px, auto));
+        justify-content: center;   
     }
 
-    .destacado-mes .iframe {
-        width: 350;
+    .destacado-mes iframe {
+        width: 680px;
+    }
+
+    .destacado-mes img{
+        width: 680px;
     }
 }
 
@@ -857,6 +909,15 @@ ul{
     }
 }
 
+@media (max-width: 420px){
+    .descripcion{
+        padding: 30px;
+    }
+
+    .patrocinadores img{
+        width: 113px;
+    }
+}
 
 /*Aqui comienza Contacto*/
 
@@ -872,7 +933,7 @@ ul{
     height: 500px;
     border-radius: 20px;
     background-color: #176985;
-    border: 8px rgb(255, 255, 255) solid;
+    border: 10px #f707ff groove;
     margin: 20px;
 }
 
@@ -912,6 +973,7 @@ ul{
 
 .informacion-login input:hover{
     background-color: #081b29;
+    transform:scale(1.05,1.05);
 }
 
 .form-information{
@@ -972,6 +1034,7 @@ ul{
 
 .form .btn:hover{
     background-color: #176985;
+    transform:scale(1.05,1.05);
 }
 
 .local{
@@ -981,6 +1044,16 @@ ul{
     margin: 40px;
     padding: 10px;
     align-items: center;
+}
+
+.ubi img{
+    width:860px; 
+    height:515px;
+    border: #f707ff 5px groove;
+}
+
+.ubi img:hover{
+    transform:scale(1.01,1.01);
 }
 
 .producto-titulo {
@@ -993,20 +1066,31 @@ ul{
     font-weight: 500;
 }
 
+@media (max-width: 1027px){
+    .local{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
 @media (max-width: 768px){
 
     .informacion-login{
-        padding: 34px;
+        padding: 0;
+    }
+
+    .informacion-login p{
+        padding: 10px;
     }
 
     .local{
         display: grid;
-        gap: 3;
         grid-template-columns: repeat(1, 1fr);
     }
 
     .local img{
-        width: 679px;
+        width: 600px;
     }
 
 }
@@ -1034,11 +1118,11 @@ ul{
 
     .informacion-login p{
         font-size: 1.4rem;
+        padding: 0;
     }
 
     .local{
         display: grid;
-        gap: 3;
         grid-template-columns: repeat(1, 1fr);
     }
 
