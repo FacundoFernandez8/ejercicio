@@ -537,7 +537,12 @@ ul{
     margin: 10px;
     padding: 30px;
     border-radius: 1rem;
-    background-color: #176985;
+   /* background-color: #176985;*/
+    border: 5px #f707ff groove;
+}
+
+.catalogo-fotos .caja:hover{
+    transform:scale(1.02,1.02);
 }
 
 .catalogo-fotos .caja .caja-bicis{
@@ -553,9 +558,6 @@ ul{
     object-position: center;
 }
 
-.catalogo-fotos .caja .caja-bicis img:hover{
-    transform:scale(1.02,1.02);
-}
 
 .catalogo-fotos .caja h2{
     margin: 19px;
@@ -622,6 +624,11 @@ ul{
     border: #f707ff 5px groove;
 }
 
+.tabla:hover{
+    transform:scale(1.01,1.01);
+
+}
+
 .tabla h2{
     text-align: center;
     color: #DAFFFB;
@@ -656,6 +663,10 @@ ul{
     border-radius: 20px;
 }
 
+.tabla-funcion:hover{
+    transform:scale(1.01,1.01);
+}
+
 .tabla-funcion h2{
     font-size: 2rem;
     font-weight: 500;
@@ -664,6 +675,19 @@ ul{
 .tabla-funcion p{
     font-size: 1.5rem;
     font-weight: 500;
+}
+
+.titulo-destacado{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.titulo-destacado h2{
+    font-size: 2rem;
+    color: #DAFFFB;
+    justify-content: center;
 }
 
 .destacado{
@@ -704,11 +728,6 @@ ul{
         margin: 5px;
     }
 
-    .titulo-destacado h2{
-        font-size: 2rem;
-        color: #DAFFFB;
-    }
-
     .destacado-mes{
         display: grid;    
         grid-template-columns: repeat(1, minmax(300px, auto));
@@ -724,6 +743,46 @@ ul{
     }
 }
 
+@media(max-width:420px){
+ 
+    .puntuacion{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(200px, auto));
+        justify-content: center; 
+    }
+
+    .tabla{
+        width: 400px;
+        margin: 0; 
+    }
+
+    .tabla-funcion{
+        margin: 0;
+        width: 400px;
+    }
+
+    .tabla-puntos{
+        margin: 0;
+        font-size: 0.9rem;
+        min-width: 370px;
+    }
+
+    .destacado-mes{
+        display: grid;    
+        grid-template-columns: repeat(1, minmax(300px, auto));
+        justify-content: center;   
+    }
+
+    .destacado-mes iframe {
+        width: 370px;
+        height: 200px;
+    }
+
+    .destacado-mes img{
+        width: 370px;
+        height: 200px;
+    }
+}
 
 /*NOSOTROS*/
 
