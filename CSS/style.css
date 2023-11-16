@@ -513,8 +513,6 @@ ul{
     background-color: #081b29;
 }
 
-
-
 .catalogo-fotos .caja{
     margin: 10px;
     padding: 30px;
@@ -547,7 +545,6 @@ ul{
     color: white;
 }
 
-
 .catalogo-fotos .caja h3{
     font-size: 1rem;
     font-weight: 600;   
@@ -568,6 +565,14 @@ ul{
 .catalogo-fotos .caja h3 span:hover{
     background-color: #000000;
     color:#ffffff;
+}
+
+@media(max-width:768px){
+    .catalogo-fotos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: #081b29;
+    } 
 }
 
 
@@ -646,6 +651,25 @@ ul{
     margin: 20px;
     padding: 10px;
     align-items: center;
+}
+
+@media(max-width:768){
+    .container{
+        width: 768px;
+    }
+    
+    .tabla{
+       justify-content: center; 
+    }
+
+    .destacado-mes{
+        display: grid;    
+        grid-template-columns: repeat(2, minmax(300px, auto));   
+    }
+
+    .destacado-mes .iframe {
+        width: 350;
+    }
 }
 
 
@@ -740,7 +764,7 @@ ul{
 
     .mensaje{
         text-align: center;
-        background-color: #176985;
+        background-color: #081b29;
         color: #ffffff;
         margin: 5%;
         padding: 50px;
@@ -750,7 +774,7 @@ ul{
     
     .descripcion{
         text-align: center;
-        background-color: #176985;
+        background-color: #081b29;
         color: #ffffff;
         margin: 5%;
         padding: 100px;
@@ -760,7 +784,7 @@ ul{
     
     .comunidad{
         text-align: center;
-        background-color: #176985;
+        background-color: #081b29;
         color: #ffffff;
         margin: 5%;
         padding: 50px;
@@ -770,7 +794,7 @@ ul{
     
     .cierre{
         text-align: center;
-        background-color: #176985;
+        background-color: #081b29;
         color: #ffffff;
         margin: 5%;
         padding: 50px;
@@ -790,7 +814,7 @@ ul{
 
     .mensaje{
         text-align: center;
-        background-color: #176985;
+        background-color: #081b29;
         color: #ffffff;
         margin: 5%;
         padding: 50px;
@@ -800,7 +824,7 @@ ul{
     
     .descripcion{
         text-align: center;
-        background-color: #176985;
+        background-color: #081b29;
         color: #ffffff;
         margin: 5%;
         padding: 100px;
@@ -810,7 +834,7 @@ ul{
     
     .comunidad{
         text-align: center;
-        background-color: #176985;
+        background-color: #081b29;
         color: #ffffff;
         margin: 5%;
         padding: 50px;
@@ -820,7 +844,7 @@ ul{
     
     .cierre{
         text-align: center;
-        background-color: #176985;
+        background-color: #081b29;
         color: #ffffff;
         margin: 5%;
         padding: 50px;
@@ -828,6 +852,9 @@ ul{
         border-radius: 8px;
     }
 
+    .patrocinadores img{
+        width: 200px;
+    }
 }
 
 
@@ -964,4 +991,59 @@ ul{
 .producto-titulo h3{
     font-size: 3rem;
     font-weight: 500;
+}
+
+@media (max-width: 768px){
+
+    .informacion-login{
+        padding: 34px;
+    }
+
+    .local{
+        display: grid;
+        gap: 3;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .local img{
+        width: 679px;
+    }
+
+}
+
+@media (max-width: 420px){
+
+    .login{
+        max-width: 424px;
+    }
+
+    .container-fluid {
+        width: 420px;
+    }
+
+    .informacion-login{
+        padding: 2px;
+        margin-top: 5px;
+    }
+
+    .informacion-login h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #DAFFFB;
+    }
+
+    .informacion-login p{
+        font-size: 1.4rem;
+    }
+
+    .local{
+        display: grid;
+        gap: 3;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .local img{
+        width: 336px;
+    }
+
 }
