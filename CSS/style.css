@@ -103,21 +103,22 @@ header{
 button{
     padding: 9px 25px;
     background-color: white(0,136,169,1);
-    border: none;
-    border-radius: 50px;
+    border: #ffffff 6px solid;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    background-color: #DAFFFB;
+    background-color: #081b29;
+    color: #ffffff;
 }
 
 .navbar-toggler{
     background-color: #DAFFFB;
-    border:#176985 solid 1px;
+    border:#176985 solid 6px;
 }
 
 button:hover{
-    background-color: #176985;
-    border: #DAFFFB 1px solid;
+    background-color: #0b324e;
+    border: #DAFFFB 6px solid;
+    color: #ffffff;
 }
 
 
@@ -626,7 +627,6 @@ ul{
 
 .tabla:hover{
     transform:scale(1.01,1.01);
-
 }
 
 .tabla h2{
@@ -673,7 +673,7 @@ ul{
 }
 
 .tabla-funcion p{
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     font-weight: 500;
 }
 
@@ -681,13 +681,16 @@ ul{
     display: flex;
     position: relative;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .titulo-destacado h2{
     font-size: 2rem;
     color: #DAFFFB;
     justify-content: center;
+    border: groove #f707ff 5px;
+    padding: 9px;
 }
 
 .destacado{
@@ -704,6 +707,36 @@ ul{
     margin: 20px;
     padding: 10px;
     align-items: center;
+}
+
+.arte-titulo{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.arte-titulo h2{
+    font-size: 2rem;
+    color: #DAFFFB;
+    justify-content: center;
+    border: groove #f707ff 5px;
+    padding: 9px;
+}
+
+.artes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+   	background-color: #081b29;
+    margin:20px;
+    margin-top: 80px;
+}
+
+.arte-fotos img{
+    width: 100%;
+    height: 300px;
 }
 
 @media(max-width:768px){
@@ -803,6 +836,9 @@ ul{
     border-radius: 8px;
 }
 
+.mensaje:hover{
+    transform:scale(1.01,1.01);
+}
 
 .descripcion{
     text-align: center;
@@ -815,7 +851,9 @@ ul{
     border-radius: 8px;
 }
 
-
+.descripcion:hover{
+    transform:scale(1.01,1.01);
+}
 
 .comunidad{
     text-align: center;
@@ -828,7 +866,9 @@ ul{
     border-radius: 8px;
 }
 
-
+.comunidad:hover{
+    transform:scale(1.01,1.01);
+}
 
 .cierre{
     text-align: center;
@@ -839,6 +879,10 @@ ul{
     font-size: 1.5rem;
     border: 20px #f707ff groove;
     border-radius: 8px;
+}
+
+.cierre:hover{
+    transform:scale(1.01,1.01);
 }
 
 .patro{
@@ -855,6 +899,7 @@ ul{
     align-items: center;
     object-fit: cover;
     object-position: center;
+    padding: 15px;
 }
 
 .patrocinadores{
