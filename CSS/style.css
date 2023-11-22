@@ -786,11 +786,11 @@ ul{
 
     .tabla{
         width: 400px;
-        margin: 0; 
+        margin-bottom: 10px; 
     }
 
     .tabla-funcion{
-        margin: 0;
+        margin-top: 50px;
         width: 400px;
     }
 
@@ -812,6 +812,36 @@ ul{
     }
 
     .destacado-mes img{
+        width: 370px;
+        height: 200px;
+    }
+
+    .arte-titulo{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    
+    .arte-titulo h2{
+        font-size: 1.5rem;
+        color: #DAFFFB;
+        justify-content: center;
+        border: groove #f707ff 5px;
+        padding: 9px;
+    }
+
+    .artes{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr min-width(300px, auto));
+        gap: 1rem;
+        background-color: #081b29;
+        margin:10px;
+        margin-top: 80px;
+    }
+    
+    .arte-fotos img{
         width: 370px;
         height: 200px;
     }
