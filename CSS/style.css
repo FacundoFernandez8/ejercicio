@@ -448,6 +448,7 @@ ul{
         position: relative;
         margin: 0;
         padding: 50px;
+        opacity: 0.7;
     }
 
     .inicio-bienvenida .presentacion h2 {
@@ -500,6 +501,7 @@ ul{
 @media(max-width:420px){
     .bienvenida h2{
         font-size:3rem;
+        opacity: 0.7;
     }
 
     .mensaje-bienvenida{
@@ -834,15 +836,15 @@ ul{
 
     .artes{
         display: grid;
-        grid-template-columns: repeat(1, 1fr min-width(300px, auto));
+        grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
         background-color: #081b29;
-        margin:10px;
+        margin: 10px;
         margin-top: 80px;
     }
     
     .arte-fotos img{
-        width: 370px;
+        width: 400px;
         height: 200px;
     }
 }
@@ -1232,7 +1234,7 @@ ul{
 @media (max-width: 420px){
 
     .login{
-        max-width: 424px;
+        max-width: 400px;
     }
 
     .container-fluid {
@@ -1253,6 +1255,10 @@ ul{
     .informacion-login p{
         font-size: 1.4rem;
         padding: 0;
+    }
+
+    .informacion-login input{
+        padding: 4px 7px;
     }
 
     .local{
