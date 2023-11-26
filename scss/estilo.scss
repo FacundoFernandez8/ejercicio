@@ -1108,7 +1108,7 @@ main{
         img{
             width:860px; 
             height:515px;
-            border: #f707ff 5px groove;
+            border: $borde 5px groove;
             &:hover{transform:scale(1.01,1.01);}
         }
         .producto-titulo {

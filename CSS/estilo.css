@@ -154,7 +154,7 @@ main {
     display: inline-block;
     position: relative;
     font-size: 5rem; }
-  .bienvenida .mensaje-bienvenida {
+  .mensaje-bienvenida {
     display: inline-block;
     margin: 30px;
     padding: 35px;
@@ -164,9 +164,9 @@ main {
     border-radius: 8px;
     border: 10px #f707ff groove;
     border-radius: 8px; }
-    .bienvenida .mensaje-bienvenida:hover {
+    .mensaje-bienvenida:hover {
       transform: scale(1.01, 1.01); }
-    .bienvenida .mensaje-bienvenida h3 {
+    .mensaje-bienvenida h3 {
       color: #ffffff; }
 
 .novedades {
@@ -198,7 +198,7 @@ main {
       border-radius: 5px; }
       .bicis-fotos .producto img:hover {
         transform: scale(1.01, 1.01); }
-      .bicis-fotos .producto img h3 {
+      .bicis-fotos .producto h3 {
         margin: 19px;
         font-weight: 50;
         font-size: 30px;
@@ -442,8 +442,8 @@ main {
   .puntuacion .tabla {
     display: inline-block;
     background-color: #081b29;
-    padding: 10px;
-    margin: 20px;
+    padding: 0px;
+    margin: 0px;
     align-content: stretch;
     border-radius: 5%;
     border: #f707ff 5px groove; }
@@ -456,7 +456,7 @@ main {
       border-collapse: collapse;
       margin: 25px 0;
       font-size: 1em;
-      min-width: 450px;
+      min-width: 390px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
       text-align: center; }
       .puntuacion .tabla .tabla-puntos tr {
@@ -487,7 +487,7 @@ main {
   display: flex;
   position: relative;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 0px;
   margin-bottom: 80px; }
   .titulo-destacado h2 {
     font-size: 2rem;
@@ -612,7 +612,7 @@ main {
     background-color: #081b29;
     color: #ffffff;
     margin: 5%;
-    padding: 100px;
+    padding: 30px;
     font-size: 1.5rem;
     border: 20px #f707ff groove;
     border-radius: 8px; }
@@ -623,7 +623,7 @@ main {
     background-color: #081b29;
     color: #ffffff;
     margin: 5%;
-    padding: 100px;
+    padding: 21px;
     font-size: 1.5rem;
     border: 20px #f707ff groove;
     border-radius: 8px; }
@@ -634,7 +634,7 @@ main {
     background-color: #081b29;
     color: #ffffff;
     margin: 5%;
-    padding: 100px;
+    padding: 25px;
     font-size: 1.5rem;
     border: 20px #f707ff groove;
     border-radius: 8px; }
@@ -645,7 +645,7 @@ main {
     background-color: #081b29;
     color: #ffffff;
     margin: 5%;
-    padding: 100px;
+    padding: 20px;
     font-size: 1.5rem;
     border: 20px #f707ff groove;
     border-radius: 8px; }
@@ -654,22 +654,27 @@ main {
 
 .patro {
   text-align: center;
-  color: #6a7c7a; }
+  color: #6a7c7a; 
+}
   .patro h2 {
-    font-size: 2rem; }
-  .patro .patrocinadores {
+    font-size: 2rem; 
+  }
+
+  .patrocinadores {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     padding: 30px;
     justify-content: center;
-    align-items: center; }
-    .patro .patrocinadores .patro-logos {
+    align-items: center; 
+  }
+    .patro-logos {
       justify-content: center;
       align-items: center;
       object-fit: cover;
       object-position: center;
-      padding: 15px; }
+      padding: 15px; 
+    }
 
 @media (max-width: 1250px) {
   .nosotros {
@@ -870,15 +875,15 @@ main {
     width: 600px; } }
 
 @media (max-width: 420px) {
-  .login {
+  .box-login .login {
     max-width: 400px; }
   .container-fluid {
     width: 420px; }
-  .informacion-login {
-    padding: 2px;
+  .box-login .login .informacion .informacion-login {
+    padding: 0px;
     margin-top: 5px; }
-  .informacion-login h2 {
-    font-size: 1.5rem;
+    .box-login .login .informacion .informacion-login h2 {
+    font-size: 1.3rem;
     font-weight: 500;
     color: #DAFFFB; }
   .informacion-login p {
@@ -889,5 +894,5 @@ main {
   .local {
     display: grid;
     grid-template-columns: repeat(1, 1fr); }
-  .local img {
-    width: 336px; } }
+  .local .ubi img {
+    width: 380px; } }
