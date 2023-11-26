@@ -117,22 +117,32 @@ ul {
   color: #081b29; }
 
 main {
-  background-color: #081b29; }
-  main .inicio-bienvenida {
-    /* background-image: url(./fotos/fondo-de\ -inicio.jpg);*/
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 50px; }
-    main .inicio-bienvenida .presentacion {
-      display: inline-block;
-      position: relative;
-      margin: 0;
-      padding: 180px; }
-      main .inicio-bienvenida .presentacion:hover {
-        transform: scale(1.01, 1.01); }
-      main .inicio-bienvenida .presentacion h2 {
-        font-size: 5rem;
-        color: #ffffff; }
+  background-color: #081b29; 
+}
+
+.inicio-bienvenida{
+  background-image: url(./fotos/fondo-de\ -inicio.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 50px; 
+}
+
+.inicio-bienvenida .presentacion{
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 180px;
+}
+
+.inicio-bienvenida .presentacion:hover{
+    transform:scale(1.01,1.01);
+}
+
+.inicio-bienvenida .presentacion h2{
+    font-size: 5rem;
+    color: #ffffff;
+}
+
 
 .bienvenida {
   padding: 10px;

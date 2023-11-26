@@ -1,3 +1,10 @@
+
+$color-principal:#081b29;
+$color-secundario:#176985;
+$color-letras:#ffffff;
+$borde:#f707ff;
+
+
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +20,7 @@ li{
 }
 
 body{
-    background-color: darkkhaki;
+    background-color: $color-principal;
 }
 
 body {
@@ -27,7 +34,7 @@ header{
     justify-content: center;
     align-items:center;
     padding: 30px 10%;
-    background-color: #081b29;
+    background-color: $color-principal;
     .navbar-brand{
         display: flex;
         position: relative;
@@ -44,14 +51,14 @@ header{
     .navbar{
         list-style: none;
         font-weight: 500;  
-        background-color: #081b29;
+        background-color: $color-principal;
         li{
             display: inline-block;
             padding: 9px 25px;
             a{
                 transition: all 0.3s ease 0s;
                 &:hover{
-                    color:#ffffff ;  
+                    color:$color-letras ;  
                 }    
             }  
         }
@@ -61,26 +68,26 @@ header{
 button{
     padding: 9px 25px;
     background-color: white(0,136,169,1);
-    border: #ffffff 6px solid;
+    border: $color-letras 6px solid;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    background-color: #081b29;
-    color: #ffffff;
+    background-color: $color-principal;
+    color: $color-letras;
 }
 
 .navbar-toggler{
     background-color: #DAFFFB;
-    border:#176985 solid 6px;
+    border: $color-secundario solid 6px;
 }
 
 button:hover{
-    background-color: #0b324e;
+    background-color: $color-secundario;
     border: #DAFFFB 6px solid;
-    color: #ffffff;
+    color: $color-letras;
 }
 
 footer{
-    background-color: #ffffff;
+    background-color: $color-letras;
     color: #000000;
     padding: 30px 0;
 }
@@ -132,8 +139,8 @@ ul{
     padding: 30px;
     margin: 0;
     text-align: center; 
-    color: rgb(255, 255, 255);
-    background: #081b29;
+    color:$color-letras;
+    background: $color-principal;
     h1{
         display: inline-block;
         position: relative;
@@ -145,12 +152,12 @@ ul{
 .titulo{
     text-align: center;
     padding: 0 125px;
-    color: #081b29;
+    color: $color-principal;
 }
 
 
 main{
-    background-color: #081b29;
+    background-color: $color-principal;
     .inicio-bienvenida{
        /* background-image: url(./fotos/fondo-de\ -inicio.jpg);*/
         background-size: cover;
@@ -166,7 +173,7 @@ main{
             }
             h2{
                 font-size: 5rem;
-                color: #ffffff;  
+                color: $color-letras;  
             } 
         }   
     }
@@ -176,8 +183,8 @@ main{
     padding: 10px;
     margin-top: 30px;
     text-align: center; 
-    color: rgb(255, 255, 255);
-    background: #081b29;
+    color: $color-letras;
+    background: $color-principal;
     h2{
         display: inline-block;
         position: relative;
@@ -189,15 +196,15 @@ main{
         padding: 35px;
         font-size: 5rem;
         font-weight: 600;
-        background-color: #081b29;
+        background-color: $color-principal;
         border-radius: 8px;
-        border: 10px #f707ff groove;
+        border: 10px $borde groove;
         border-radius: 8px;
         &:hover{
             transform:scale(1.01,1.01); 
         }
         h3{
-            color: #ffffff;   
+            color: $color-letras;   
         }
     }        
 }
@@ -206,8 +213,8 @@ main{
     padding: 10px;
     margin-top: 50px;
     text-align: center; 
-    color: rgb(255, 255, 255);
-    background: #081b29;
+    color: $color-letras;
+    background: $color-principal;
     h2{
         display: inline-block;
         position: relative;
@@ -229,7 +236,7 @@ main{
             height: 600px;
             object-fit: cover;
             object-position: center;
-            border: 5px #f707ff solid;
+            border: 5px $borde solid;
             border-radius: 5px;
             &:hover{
                 transform:scale(1.01,1.01); 
@@ -239,7 +246,7 @@ main{
                 font-weight: 50;
                 font-size: 30px;
                 text-align: center;
-                color: white; 
+                color: $color-letras; 
             }  
         }
     }  
@@ -261,12 +268,12 @@ main{
     body {
         margin: 0;
         padding: 0;
-        background-color: #081b29; 
+        background-color: $color-principal; 
     }
 
     .inicio{
         text-align: center;
-        color: #ffffff;
+        color: $color-letras;
         font-size: 2rem;
     }
 
@@ -274,7 +281,7 @@ main{
         .presentacion{
             h2{
                 font-size: 4rem;
-                color: #ffffff;  
+                color: $color-letras;  
             }
         }
     }
@@ -285,9 +292,9 @@ main{
         padding: 20px;
         font-size: 3rem;
         text-align: center;
-        border: 5px #f707ff solid;
+        border: 5px $borde solid;
         border-radius: 10px;
-        background-color: #081b29;
+        background-color: $color-principal;
     }
 
     .bicis-fotos{
@@ -306,7 +313,7 @@ main{
             height: 350px;
             object-fit: cover;
             object-position: center;
-            border: 3px #f707ff solid;
+            border: 3px $borde solid;
             border-radius: 5px;
             }
         h3{
@@ -314,7 +321,7 @@ main{
             font-weight: 50;
             font-size: 30px;
             text-align: center;
-            color: white;
+            color: $color-letras;
         }    
         }
     }
@@ -330,12 +337,12 @@ main{
     body {
         margin: 0;
         padding: 0;
-        background-color: #081b29; 
+        background-color: $color-principal; 
     }
 
     .inicio{
         text-align: center;
-        color: #ffffff;
+        color: $color-letras;
         font-size: 2rem;
     }
 
@@ -347,7 +354,7 @@ main{
             padding: 180px;
             h2{
                 font-size: 3rem;
-                color: #ffffff;
+                color: $color-letras;
             }
         } 
     } 
@@ -358,11 +365,11 @@ main{
         padding: 20px;
         font-size: 3rem;
         text-align: center;
-        border: 2px #176985 solid;
+        border: 2px $color-secundario solid;
         border-radius: 10px;
-        background-color: #176985;
+        background-color: $color-secundario;
         h3{
-            color: #ffffff;
+            color: $color-letras;
         }
         
     }
@@ -380,7 +387,7 @@ main{
                 height: 250px;
                 object-fit: cover;
                 object-position: center;
-                border: 2px #176985 solid;
+                border: 2px $color-secundario solid;
                 border-radius: 5px;
             }
             h3{
@@ -388,7 +395,7 @@ main{
                 font-weight: 50;
                 font-size: 30px;
                 text-align: center;
-                color: white; 
+                color: $color-letras; 
             }
         }  
     } 
@@ -398,12 +405,12 @@ main{
     body {
         margin: 0;
         padding: 0;
-        background-color: #081b29; 
+        background-color: $color-principal; 
     }
 
     .inicio{
         text-align: center;
-        color: #ffffff;
+        color: $color-letras;
         font-size: 2rem;
     }
 
@@ -416,7 +423,7 @@ main{
             opacity: 0.7;
             h2 {
                 font-size: 3rem;
-                color: #ffffff;
+                color: $color-letras;
             }
         }
     }
@@ -427,9 +434,9 @@ main{
         padding: 20px;
         font-size: 3rem;
         text-align: center;
-        border: 2px #176985 solid;
+        border: 2px $color-secundario solid;
         border-radius: 10px;
-        background-color: #176985;
+        background-color: $color-secundario;
     }
 
     .bicis-fotos{
@@ -445,7 +452,7 @@ main{
                 height: 250px;
                 object-fit: cover;
                 object-position: center;
-                border: 2px #176985 solid;
+                border: 2px $color-secundario solid;
                 border-radius: 5px;
             }
             h3{
@@ -453,7 +460,7 @@ main{
                 font-weight: 50;
                 font-size: 30px;
                 text-align: center;
-                color: white;
+                color: $color-letras;
             }
         }  
     } 
@@ -468,8 +475,8 @@ main{
     }
 
     .mensaje-bienvenida{
-        background-color: #081b29;
-        border: #f707ff 3px groove;
+        background-color: $color-principal;
+        border: $borde 3px groove;
     }
 
     .novedades h2{
@@ -480,7 +487,7 @@ main{
         .producto{
             img{
                 height: 136px;
-                border: 2px #f707ff solid;
+                border: 2px $borde solid;
             }
         }
     }
@@ -489,7 +496,7 @@ main{
 .catalogo{
     text-align: center;
     background: #45494E;
-    color: white;
+    color: $color-letras;
     font-size: 1.5rem;
     padding: 30px;
     margin: 10px;
@@ -498,12 +505,12 @@ main{
 .catalogo-fotos{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background-color: #081b29;
+    background-color: $color-principal;
     .caja{
         margin: 10px;
         padding: 30px;
         border-radius: 1rem;
-        border: 5px #f707ff groove;
+        border: 5px $borde groove;
         &:hover{
             transform:scale(1.02,1.02);  
         }
@@ -513,7 +520,7 @@ main{
             font-weight: 50;
             font-size: 30px;
             text-align: center;
-            color: white;
+            color: $color-letras;
         }
 
         h3{
@@ -526,12 +533,12 @@ main{
                 font-weight: 600;
                 color: #000000;   
                 padding: 9px 25px;
-                background-color: #ffffff;
+                background-color: $color-letras;
                 border-radius: 50px;
                 margin: 5px;
                 &:hover{
                     background-color: #000000;
-                    color:#ffffff; 
+                    color:$color-letras; 
                 } 
             }
         }
@@ -555,7 +562,7 @@ main{
     .catalogo-fotos{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        background-color: #081b29;
+        background-color: $color-principal;
     } 
 }
 
@@ -576,18 +583,18 @@ main{
     display: flex;
     .tabla{
         display: inline-block;
-        background-color: #081b29;
+        background-color: $color-principal;
         padding: 10px;
         margin: 20px ; 
         align-content: stretch;
         border-radius: 5%;
-        border: #f707ff 5px groove;
+        border: $borde 5px groove;
         &:hover{
             transform:scale(1.01,1.01); 
         }
         h2{
             text-align: center;
-            color: #DAFFFB;  
+            color: $color-letras;  
         }
         .tabla-puntos {
             border-collapse: collapse; 
@@ -597,8 +604,8 @@ main{
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
             text-align: center;
             tr { 
-                background-color: #176985; 
-                color: #f0f0f0; 
+                background-color: $color-secundario; 
+                color: $color-letras; 
                 text-align: middle;
                 th{
                     padding: 12px 15px; 
@@ -609,12 +616,12 @@ main{
 }
 
 .tabla-funcion{
-    border: 10px #f707ff groove;
+    border: 10px $borde groove;
     margin: 0 40px;
     padding: 30px;
     text-align: center;
-    color: #DAFFFB;
-    background-color: #081b29;
+    color: $color-letras;
+    background-color: $color-principal;
     border-radius: 20px;
     &:hover{
         transform:scale(1.01,1.01);
@@ -637,16 +644,16 @@ main{
     margin-bottom: 80px;
     h2{
         font-size: 2rem;
-        color: #DAFFFB;
+        color: $color-letras;
         justify-content: center;
-        border: groove #f707ff 5px;
+        border: groove $borde 5px;
         padding: 9px;
     }
 }
 
 .destacado{
     text-align: center;
-    color: #DAFFFB;
+    color: $color-letras;
     font-size: 3rem;
     margin-top: 80px;
 }
@@ -668,9 +675,9 @@ main{
     margin-bottom: 80px;
     h2{
         font-size: 2rem;
-        color: #DAFFFB;
+        color: $color-letras;
         justify-content: center;
-        border: groove #f707ff 5px;
+        border: groove $borde 5px;
         padding: 9px;  
     }
 }
@@ -679,7 +686,7 @@ main{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-   	background-color: #081b29;
+   	background-color: $color-principal;
     margin:20px;
     margin-top: 80px;
     img{
@@ -777,7 +784,7 @@ main{
         font-size: 1.5rem;
         color: #DAFFFB;
         justify-content: center;
-        border: groove #f707ff 5px;
+        border: groove $borde 5px;
         padding: 9px;
     }
 
@@ -785,7 +792,7 @@ main{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
-        background-color: #081b29;
+        background-color: $color-principal$color-principal;
         margin: 10px;
         margin-top: 80px;
     }
@@ -801,12 +808,12 @@ main{
     grid-template-columns: repeat(2, 1fr);
     .mensaje{
         text-align: center;
-        background-color: #081b29;
-        color: #ffffff;
+        background-color: $color-principal;
+        color: $color-letras;
         margin: 5%;
         padding: 100px;
         font-size: 1.5rem;
-        border: 20px #f707ff groove;
+        border: 20px $borde groove;
         border-radius: 8px;
         &:hover{
             transform:scale(1.01,1.01);
@@ -814,12 +821,12 @@ main{
     }
     .descripcion{
         text-align: center;
-        background-color: #081b29;
-        color: #ffffff;
+        background-color: $color-principal;
+        color: $color-letras;
         margin: 5%;
         padding: 100px;
         font-size: 1.5rem;
-        border: 20px #f707ff groove;
+        border: 20px $borde groove;
         border-radius: 8px;
         &:hover{
             transform:scale(1.01,1.01);
@@ -827,12 +834,12 @@ main{
     }
     .comunidad{
         text-align: center;
-        background-color: #081b29;
-        color: #ffffff;
+        background-color: $color-principal;
+        color: $color-letras;
         margin: 5%;
         padding: 100px;
         font-size: 1.5rem;
-        border: 20px #f707ff groove;
+        border: 20px $borde groove;
         border-radius: 8px;
         &:hover{
             transform:scale(1.01,1.01);
@@ -840,12 +847,12 @@ main{
     }
     .cierre{
         text-align: center;
-        background-color: #081b29;
-        color: #ffffff;
+        background-color: $color-principal;
+        color: $color-letras;
         margin: 5%;
         padding: 100px;
         font-size: 1.5rem;
-        border: 20px #f707ff groove;
+        border: 20px $borde groove;
         border-radius: 8px;
         &:hover{
             transform:scale(1.01,1.01);
@@ -886,8 +893,8 @@ main{
 
     .mensaje{
         text-align: center;
-        background-color: #081b29;
-        color: #ffffff;
+        background-color: $color-principal;
+        color: $color-letras;
         margin: 5%;
         padding: 50px;
         font-size: 1.5rem;
@@ -896,8 +903,8 @@ main{
     
     .descripcion{
         text-align: center;
-        background-color: #081b29;
-        color: #ffffff;
+        background-color: $color-principal;
+        color: $color-letras;
         margin: 5%;
         padding: 100px;
         font-size: 1.5rem;
@@ -906,8 +913,8 @@ main{
     
     .comunidad{
         text-align: center;
-        background-color: #081b29;
-        color: #ffffff;
+        background-color: $color-principal;
+        color: $color-letras;
         margin: 5%;
         padding: 50px;
         font-size: 1.5rem;
@@ -916,8 +923,8 @@ main{
     
     .cierre{
         text-align: center;
-        background-color: #081b29;
-        color: #ffffff;
+        background-color: $color-principal;
+        color: $color-letras;
         margin: 5%;
         padding: 50px;
         font-size: 1.5rem;
@@ -935,8 +942,8 @@ main{
 
     .mensaje{
         text-align: center;
-        background-color: #081b29;
-        color: #ffffff;
+        background-color: $color-principal;
+        color: $color-letras;
         margin: 5%;
         padding: 50px;
         font-size: 1.5rem;
@@ -945,8 +952,8 @@ main{
     
     .descripcion{
         text-align: center;
-        background-color: #081b29;
-        color: #ffffff;
+        background-color: $color-principal;
+        color: $color-letras;
         margin: 5%;
         padding: 100px;
         font-size: 1.5rem;
@@ -955,8 +962,8 @@ main{
     
     .comunidad{
         text-align: center;
-        background-color: #081b29;
-        color: #ffffff;
+        background-color: $color-principal;
+        color: $color-letras;
         margin: 5%;
         padding: 50px;
         font-size: 1.5rem;
@@ -965,8 +972,8 @@ main{
     
     .cierre{
         text-align: center;
-        background-color: #081b29;
-        color: #ffffff;
+        background-color: $color-principal;
+        color: $color-letras;
         margin: 5%;
         padding: 50px;
         font-size: 1.5rem;
@@ -996,37 +1003,37 @@ main{
         max-width: 900px;
         height: 500px;
         border-radius: 20px;
-        background-color: #176985;
-        border: 10px #f707ff groove;
+        background-color: $color-secundario;
+        border: 10px $borde groove;
         margin: 20px;
         .informacion{ 
             margin: 0; 
             border-radius: 5%;
             width: 40%;
             .informacion-login{
-                background-color: #176985;  
+                background-color:$color-secundario; 
                 padding: 50px;
                 text-align:center;
                 h2{
                     font-size: 2rem;
                     font-weight: 500;
-                    color: #DAFFFB;  
+                    color: $color-letras;  
                 }
                 p{
                     font-size: 1.5rem;
                     font-weight: 400;
-                    color: #DAFFFB;
+                    color: $color-letras;
                 }
                 input{
-                    border: 3px #DAFFFB solid;
+                    border: 3px $color-letras solid;
                     border-radius: 20px;
                     padding: 10px 20px;
-                    background-color: #176985;
-                    color: #DAFFFB;
+                    background-color: $color-secundario;
+                    color: $color-letras;
                     font-size: 1.5rem;
                     &:hover{
-                        background-color: #081b29;
-    transform:scale(1.05,1.05);
+                        background-color: $color-principal;
+                        transform:scale(1.05,1.05);
                     }
                 }
             }
@@ -1042,16 +1049,16 @@ main{
     justify-content: center;
     width: 60%;
     text-align: center;
-    background-color: #081b29;
+    background-color: $color-principal;
     padding: 30px;
     .form-information-childs{
         padding: 0 30px;
         h2{
-            color: #DAFFFB;
+            color: $color-letras;
             font-size: 3rem;
         }
         p{
-            color: #DAFFFB;
+            color: $color-letras;
             font-size: 1.5rem;
         }
         .form{
@@ -1062,24 +1069,24 @@ main{
                 margin: 10px;
                 border-radius: 20px;
                 padding: 0 10px;
-                background-color:#DAFFFB ;
+                background-color:$color-letras ;
                 input{
                     width: 100%;
                     padding: 10px;
                     border: none;
                     outline: none;
                     border-radius: 20px;
-                    background-color: #DAFFFB;
+                    background-color: $color-letras;
                     .btn{
                         margin: 10px;
-                        border: 3px #DAFFFB solid;
+                        border: 3px $color-letras solid;
                         border-radius: 20px;
                         padding: 10px 20px;
-                        background-color: #081b29;
-                        color: #DAFFFB;
+                        background-color: $color-principal;
+                        color: $color-letras;
                         font-size: 1.5rem;
                         &:hover{
-                            background-color: #176985;
+                            background-color: $color-secundario;
                             transform:scale(1.05,1.05); 
                         }
                     }
@@ -1106,7 +1113,7 @@ main{
         }
         .producto-titulo {
             text-align: center;
-            color: #DAFFFB;
+            color: $color-letras;
             h3{
                 font-size: 3rem;
                 font-weight: 500;
@@ -1161,7 +1168,7 @@ main{
     .informacion-login h2 {
         font-size: 1.5rem;
         font-weight: 500;
-        color: #DAFFFB;
+        color: $color-letras;
     }
 
     .informacion-login p{
