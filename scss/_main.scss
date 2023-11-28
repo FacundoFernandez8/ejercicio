@@ -1,0 +1,23 @@
+
+main{
+    background-color: $color-principal;
+    .inicio-bienvenida{
+       /* background-image: url(./fotos/fondo-de\ -inicio.jpg);*/
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 50px;
+        .presentacion{
+            display: inline-block;
+            position: relative;
+            margin: 0;
+            padding: 180px;
+            &:hover{
+                transform:scale(1.01,1.01);  
+            }
+            h2{
+                font-size: 5rem;
+                color: $color-letras;  
+            } 
+        }   
+    }
+}
