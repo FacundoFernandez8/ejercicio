@@ -1,0 +1,82 @@
+
+.nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .mensaje{
+        text-align: center;
+        background-color: $color-principal;
+        color: $color-letras;
+        margin: 5%;
+        padding: 100px;
+        font-size: 1.5rem;
+        border: 20px $borde groove;
+        border-radius: 8px;
+        &:hover{
+            transform:scale(1.01,1.01);
+        }
+    }
+    .descripcion{
+        text-align: center;
+        background-color: $color-principal;
+        color: $color-letras;
+        margin: 5%;
+        padding: 100px;
+        font-size: 1.5rem;
+        border: 20px $borde groove;
+        border-radius: 8px;
+        &:hover{
+            transform:scale(1.01,1.01);
+        }
+    }
+    .comunidad{
+        text-align: center;
+        background-color: $color-principal;
+        color: $color-letras;
+        margin: 5%;
+        padding: 100px;
+        font-size: 1.5rem;
+        border: 20px $borde groove;
+        border-radius: 8px;
+        &:hover{
+            transform:scale(1.01,1.01);
+        }
+    }
+    .cierre{
+        text-align: center;
+        background-color: $color-principal;
+        color: $color-letras;
+        margin: 5%;
+        padding: 100px;
+        font-size: 1.5rem;
+        border: 20px $borde groove;
+        border-radius: 8px;
+        &:hover{
+            transform:scale(1.01,1.01);
+        }
+    }
+    
+}
+
+.patro{
+    text-align: center;
+    color: #6a7c7a;
+    h2{
+        font-size: 2rem;  
+    }
+    .patrocinadores{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding: 30px;
+        justify-content: center;
+        align-items: center;
+        .patro-logos{
+            justify-content: center;
+            align-items: center;
+            object-fit: cover;
+            object-position: center;
+            padding: 15px;
+        }
+    }
+}
+

@@ -1,0 +1,116 @@
+
+.puntuacion{
+    display: flex;
+    .tabla{
+        display: inline-block;
+        background-color: $color-principal;
+        padding: 10px;
+        margin: 20px ; 
+        align-content: stretch;
+        border-radius: 5%;
+        border: $borde 5px groove;
+        &:hover{
+            transform:scale(1.01,1.01); 
+        }
+        h2{
+            text-align: center;
+            color: $color-letras;  
+        }
+        .tabla-puntos {
+            border-collapse: collapse; 
+            margin: 25px 0; 
+            font-size: 1em;  
+            min-width: 450px; 
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
+            text-align: center;
+            tr { 
+                background-color: $color-secundario; 
+                color: $color-letras; 
+                text-align: middle;
+                th{
+                    padding: 12px 15px; 
+                }
+            }
+        } 
+    }
+}
+
+.tabla-funcion{
+    border: 10px $borde groove;
+    margin: 0 40px;
+    padding: 30px;
+    text-align: center;
+    color: $color-letras;
+    background-color: $color-principal;
+    border-radius: 20px;
+    &:hover{
+        transform:scale(1.01,1.01);
+    }
+    h2{
+        font-size: 2rem;
+        font-weight: 500;  
+    }
+    p{
+        font-size: 1.9rem;
+        font-weight: 500;  
+    }
+}
+
+.titulo-destacado{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    h2{
+        font-size: 2rem;
+        color: $color-letras;
+        justify-content: center;
+        border: groove $borde 5px;
+        padding: 9px;
+    }
+}
+
+.destacado{
+    text-align: center;
+    color: $color-letras;
+    font-size: 3rem;
+    margin-top: 80px;
+}
+
+.destacado-mes{   
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);;
+    margin: 20px;
+    padding: 10px;
+    align-items: center;
+}
+
+.arte-titulo{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    h2{
+        font-size: 2rem;
+        color: $color-letras;
+        justify-content: center;
+        border: groove $borde 5px;
+        padding: 9px;  
+    }
+}
+
+.artes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+   	background-color: $color-principal;
+    margin:20px;
+    margin-top: 80px;
+    img{
+        width: 100%;
+        height: 300px; 
+    }
+}
