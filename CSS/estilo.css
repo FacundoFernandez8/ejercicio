@@ -89,6 +89,9 @@ ul {
 .iconos-redes li {
   display: inline-block; }
 
+  .iconos-redes li:hover {
+  translate: (1.01,1.01); }
+
 @media (max-width: 991px) {
   .footer-info {
     flex: 0 0 50%;
@@ -913,8 +916,7 @@ main {
     padding: 5px; }
   
     .local .ubi{
-
-  }
+    }
 
   .local .ubi img {
     width: 410px;
