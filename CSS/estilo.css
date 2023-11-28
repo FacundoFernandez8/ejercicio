@@ -753,6 +753,8 @@ main {
 @media (max-width: 420px) {
   .descripcion {
     padding: 30px; }
+  .patrocinadores{
+    gap: 0;}
   .patrocinadores img {
     width: 113px; } }
 
@@ -819,14 +821,14 @@ main {
         border-radius: 20px;
         padding: 0 10px;
         background-color: #DAFFFB; }
-        .form-information .form-information-childs .form label input {
+        .form-information .form-information-childs .form input {
           width: 100%;
           padding: 10px;
           border: none;
           outline: none;
           border-radius: 20px;
           background-color: #DAFFFB; }
-          .form-information .form-information-childs .form label input .btn {
+          .form-information .form-information-childs .form .btn {
             margin: 10px;
             border: 3px #DAFFFB solid;
             border-radius: 20px;
@@ -834,7 +836,7 @@ main {
             background-color: #081b29;
             color: #DAFFFB;
             font-size: 1.5rem; }
-            .form-information .form-information-childs .form label input .btn:hover {
+            .form-information .form-information-childs .form .btn:hover {
               background-color: #176985;
               transform: scale(1.05, 1.05); }
 
@@ -875,24 +877,45 @@ main {
     width: 600px; } }
 
 @media (max-width: 420px) {
+  
+  .inicio{
+    width: 400px;
+    padding: 10px;}
   .box-login .login {
-    max-width: 400px; }
+    max-width: 410px; }
   .container-fluid {
-    width: 420px; }
+    width: 390px; }
   .box-login .login .informacion .informacion-login {
     padding: 0px;
-    margin-top: 5px; }
-    .box-login .login .informacion .informacion-login h2 {
-    font-size: 1.3rem;
+    margin-top: 40px; }
+  .box-login .login .informacion .informacion-login h2 {
+    font-size: 1.5rem;
     font-weight: 500;
     color: #DAFFFB; }
-  .informacion-login p {
-    font-size: 1.4rem;
+    .box-login .login .informacion .informacion-login p {
+    font-size: 1.2rem;
     padding: 0; }
-  .informacion-login input {
-    padding: 4px 7px; }
+    .box-login .login .informacion .informacion-login input {
+    padding: 6px 4px; }
+    .form-information .form-information-childs .form .btn {
+      margin: 6px;
+      border: 3px #DAFFFB solid;
+      border-radius: 20px;
+      padding: 5px 7px;
+      background-color: #081b29;
+      color: #DAFFFB;
+      font-size: 1.5rem; }
   .local {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); }
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.1rem;
+    margin: 0px;
+    padding: 5px; }
+  
+    .local .ubi{
+
+  }
+
   .local .ubi img {
-    width: 380px; } }
+    width: 410px;
+    height: 320px;} }
