@@ -124,7 +124,7 @@ main {
 }
 
 .inicio-bienvenida{
-  background-image: url(./fotos/fondo-de\ -inicio.jpg);
+  background-image: url(../fotos/fondo-de\ -inicio.jpg);
   background-size: cover;
   background-position: center;
   margin-bottom: 50px; 
@@ -916,6 +916,7 @@ main {
     padding: 5px; }
   
     .local .ubi{
+      padding: 0;
     }
 
   .local .ubi img {
