@@ -1,4 +1,5 @@
 
+
      /*RESPONSIVE INDEX*/
 
 @media (max-width: 1250px) {  
@@ -139,6 +140,74 @@
                 font-size: 30px;
                 text-align: center;
                 color: $color-letras; 
+            }
+        }  
+    } 
+}
+
+@media(max-width:500px){
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: $color-principal; 
+    }
+
+    .inicio{
+        text-align: center;
+        color: $color-letras;
+        font-size: 2rem;
+    }
+
+    .inicio-bienvenida{
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 50px;
+        .presentacion{
+            display: inline-block;
+            position: relative;
+            margin: 0;
+            padding: 50px;
+            opacity: 0.7;
+            h2 {
+                font-size: 3rem;
+                color: $color-letras;
+            }
+        }
+    }
+
+    .mensaje-bienvenida {
+        display: inline-block;
+        margin: 10px;
+        padding: 20px;
+        font-size: 3rem;
+        text-align: center;
+        border: 2px $color-secundario solid;
+        border-radius: 10px;
+        background-color: $color-secundario;
+    }
+
+    .bicis-fotos{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, auto));
+        gap: 0.5rem;
+        margin-top: 2rem;
+        .producto{
+            margin: 0px;
+            padding: 20px;
+            img{
+                width: 95%;
+                height: 250px;
+                object-fit: cover;
+                object-position: center;
+                border: 2px $color-secundario solid;
+                border-radius: 5px;
+            }
+            h3{
+                margin: 19px;
+                font-weight: 50;
+                font-size: 30px;
+                text-align: center;
+                color: $color-letras;
             }
         }  
     } 
