@@ -1,0 +1,69 @@
+
+
+--HEADER DE INICIO--
+
+
+<header class="header">
+         <a href="inicio.html"> <img src="./CSS/fotos/favicon-32x32.png" alt="logo"></a>
+
+          <nav>
+            <ul class="navbar">           
+              <li><a href="inicio.html">Inicio</a></li>
+              <li><a href="./HTML/catalogo.html">Catalogo</a></li>
+              <li><a href="./HTML/comunidad.html">Comunidad</a></li>
+              <li><a href="./HTML/nosotros.html">Nosotros</a></li>                       
+            </ul>
+          </nav>
+          <a class="contacto" href="./HTML/contacto.html"><button>Contacto</button></a>                  
+      </header>
+
+
+---ESTILO DE INICIO---
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 30px 10%;
+    background-color: #081b29;
+}
+
+.logo{
+    cursor: pointer;
+    position: initial;
+}
+
+.navbar{
+    list-style: none;
+   /* color: #451952;*/
+    font-weight: 500;
+    
+}
+
+.navbar li{
+    display: inline-block;
+    padding: 9px 25px;
+   
+}
+
+.navbar li a{
+    transition: all 0.3s ease 0s;
+}
+
+.navbar li a:hover{
+    color:#ffffff ;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: white(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: #989b03;
+}
